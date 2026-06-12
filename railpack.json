@@ -1,0 +1,10 @@
+{
+  "buildAptPackages": [
+    "libcurl4-openssl-dev",
+    "libxml2-dev",
+    "libpng-dev",
+    "libzip-dev",
+    "libonig-dev",
+    "libssl-dev"
+  ]
+}
