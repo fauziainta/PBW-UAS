@@ -13,7 +13,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ route('admin.users.update', $user->id) }}" method="POST">
+                    <form action="{{ route('admin.users.update', $user->id) }}" method="POST" onsubmit="confirmAction(event, 'Update User', 'Are you sure you want to update this user account details?', 'Update Now')">
                         @csrf
                         @method('PUT')
                         <div class="mb-3">

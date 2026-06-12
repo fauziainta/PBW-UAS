@@ -13,7 +13,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ route('admin.users.store') }}" method="POST">
+                    <form action="{{ route('admin.users.store') }}" method="POST" onsubmit="confirmAction(event, 'Create User', 'Are you sure you want to create this new user account?', 'Create Now')">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">Full Name</label>
